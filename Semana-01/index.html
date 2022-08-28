@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <nav> <!--Header menu-->
+      <nav>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#aboutTrackgenix">About Trackgenix</a></li>
@@ -21,15 +21,20 @@
       </nav>
     </header>
     <main>
-      <aside> <!--Sidebar-->
+      <aside>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#signUp">Sign Up</a></li>
           <li><a href="#signIn">Sign In</a></li>
-          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p>Contact</p>
+        <ul>
+          <li>info@gigatech.com</li>
+          <li>(+000) 000-0000000</li>
+          <li>1234 SomeWhere Road, SomeWhere XX 000-0000</li>
         </ul>
       </aside>
-      <section id="home"> <!--Home-->
+      <section id="home">
         <h1>Trackgenix</h1>
         <h2>Make it easy to record hours worked on each project and work team at GigaTech Software Solutions SA</h2>
         <img src="img/home-desktop.jpg" alt="Woman at the office interacting with a tablet next to a laptop.">
@@ -43,7 +48,7 @@
         </p>
         <button id="btnLearnMore">Learn more</button>
       </section>
-      <section id="aboutTrackgenix"> <!--About Trackgenix-->
+      <section id="aboutTrackgenix">
         <h2>About Trackgenix</h2>
         <article>
           <h3>Productivity booster</h3>
@@ -74,7 +79,7 @@
           </p>
         </article>
       </section>
-      <section id="functions"> <!--Functions-->
+      <section id="functions">
         <h2>Functions</h2>
         <article>
           <h3>Record of hours</h3>
@@ -105,26 +110,26 @@
           </p>
         </article>
       </section>
-      <section id="information"> <!--Information-->
+      <section id="information">
         <h2>More information</h2>
         <form action="">
           <label for="txtInfoName">Name</label>
           <input id="txtInfoName" type="text" placeholder="text your name here">
-          <label for="txtInfoName">Email</label>
-          <input id="txtInfoName" type="text" placeholder="text your email here">
+          <label for="txtInfoEmail">Email</label>
+          <input id="txtInfoEmail" type="text" placeholder="text your email here">
           <p>Contact area</p>
-          <input id="btnHumanResources" type="radio" value="Human Resources">
-          <label for="btnHumanResources">Human Resources</label>
-          <input id="btnSystems" type="radio" value="Systems">
-          <label for="btnSystems">Systems</label>
-          <input id="btnCommercialization" type="radio" value="Commercialization">
-          <label for="btnCommercialization">Commercialization</label>
-          <label for="txtMessage">Message</label>
-          <textarea id="txtMessage" name="Message" cols="30" rows="10"></textarea>
-          <button id="btnSend">Send</button>
+          <input id="btnInfoHumanResources" type="radio" value="Human Resources">
+          <label for="btnInfoHumanResources">Human Resources</label>
+          <input id="btnInfoSystems" type="radio" value="Systems">
+          <label for="btnInfoSystems">Systems</label>
+          <input id="btnInfoCommercialization" type="radio" value="Commercialization">
+          <label for="btnInfoCommercialization">Commercialization</label>
+          <label for="txtInfoMessage">Message</label>
+          <textarea id="txtInfoMessage" name="Message" cols="30" rows="10"></textarea>
+          <button id="btnInfoSend">Send</button>
         </form>
       </section>
-      <section id="ourHistory"> <!--Our history-->
+      <section id="ourHistory">
         <h2>Our History</h2>
         <h3>GigaTech Software Solutions SA</h3>
         <article>
@@ -156,7 +161,7 @@
           </p>
         </article>
       </section>
-      <section id="productsServices"> <!--Products & Services-->
+      <section id="productsServices">
         <h2>Products & Services</h2>
         <article>
           <h3>Products</h3>
@@ -198,14 +203,37 @@
           </ol>
         </article>
       </section>
-      <section id="signUp"> <!--Sign Up-->
-
+      <section id="signUp">
+        <h2>Sign Up</h2>
+        <form action="">
+          <label for="txtSupName">Name</label>
+          <input id="txtSupName" type="text" placeholder="text your name here">
+          <label for="txtSupName">Last Name</label>
+          <input id="txtSupName" type="text" placeholder="text your last name here">
+          <label for="txtSupName">Mobile</label>
+          <input id="txtSupName" type="text" placeholder="text your mobile number here">
+          <label for="txtSupName">Identity Document</label>
+          <input id="txtSupName" type="text" placeholder="text your identity document here">
+          <label for="txtSupName">Email</label>
+          <input id="txtSupName" type="text" placeholder="text your email here">
+          <label for="txtSupName">Password</label>
+          <input id="txtSupName" type="password" placeholder="text your password here">
+          <label for="txtSupName">Repeat Password</label>
+          <input id="txtSupName" type="password" placeholder="text your password here">
+          <button id="btnSupRegister">Register</button>
+        </form>
       </section>
-      <section id="signIn"> <!--Sign In-->
-
-      </section>
-      <section id="contact"> <!--Contact-->
-
+      <section id="signIn">
+        <h2>Sign In</h2>
+        <form action="">
+          <label for="txtSupName">Email</label>
+          <input id="txtSupName" type="text" placeholder="text your email here">
+          <label for="txtSupName">Password</label>
+          <input id="txtSupName" type="password" placeholder="text your password here">
+          <input type="checkbox" name="RememberMe" id="btnSinRemember">
+          <label for="btnSinRemember">Remember me</label>
+          <button id="btnSinSignIn">Sign in</button>
+        </form>
       </section>
     </main>
     <footer> 
