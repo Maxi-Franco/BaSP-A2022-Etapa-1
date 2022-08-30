@@ -8,6 +8,6 @@ This is a landing page with information about the Trackgenix app.
 ```
 
 ## Week 01
-All the structure page was created in HTML.
+The landing page desktop version was created using HTML with semantic tags.
 
 _By Maxi Franco_
