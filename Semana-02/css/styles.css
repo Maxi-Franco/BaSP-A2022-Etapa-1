@@ -1,0 +1,79 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: #D9D9D9;
+  color: #373867;
+  position: fixed;
+  width: 100%;
+
+}
+
+header nav ul{
+  padding: 30px;
+  list-style: none;
+  text-align: right;
+}
+
+header nav li{
+  display: inline;
+  padding: 0 20px;
+}
+
+header nav li a{
+  text-decoration: none;
+}
+
+header nav li a:hover, :focus{
+  background-color: #373867;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+aside{
+  float: left;
+  background-color: #D9D9D9;
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  padding: 10px;
+}
+
+aside li{
+  padding: 20px 0;
+}
+
+aside li a{
+  text-decoration: none;
+}
+
+aside li a:hover, :focus{
+  background-color: #373867;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+aside li i {
+  color: #373867;
+}
+
+aside li i:hover, :focus{
+  color: #ffffff;
+}
+
+.aside-contact li{
+  color: #373867;
+  font-size: 10px;
+}
+
+aside input{
+  background-color: #ffffff;
+}
+
+aside input:hover, :focus{
+  background-color: #ffffff;
+}
+
