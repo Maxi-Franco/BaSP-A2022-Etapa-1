@@ -77,3 +77,58 @@ aside input:hover, :focus{
   background-color: #ffffff;
 }
 
+main{
+  padding: 76px 0;
+}
+
+h1{
+  font-size: 32px;
+  color: #373867;
+  
+}
+
+h2{
+  font-size: 24px;
+  color: #373867;
+  padding: 30px 0;
+}
+
+h3{
+  font-size: 20px;
+  color: #373867;
+}
+
+p{
+  font-size: 16px;
+  color: #373867;
+}
+
+section{
+  margin: 50px 100px 60px 350px;
+}
+
+article{
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+}
+
+article .article-icon{
+  width: 60px;
+}
+
+article #img-home{
+  width: 507px;
+  border-radius: 10px;
+}
+
+footer{
+  background-color: #D9D9D9;
+  color: #373867;
+  padding: 20px 0;
+
+}
+footer li{
+  display: inline;
+  padding: 0 20px;
+}
