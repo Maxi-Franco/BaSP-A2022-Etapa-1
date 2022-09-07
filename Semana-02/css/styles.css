@@ -45,14 +45,14 @@ aside{
   height: 100%;
   padding: 10px;
   margin-top: 15px;
-  z-index: -1;
+  /*z-index: -1;*/
 }
 
 aside a{
   text-decoration: none;
 }
 
-aside a:hover, :focus{
+aside a:hover{
   background-color: #373867;
   color: #ffffff;
   border-radius: 5px;
@@ -65,6 +65,30 @@ aside i{
 
 aside i:hover, :focus{
   color: #ffffff;
+}
+
+aside label{
+  border-bottom: #373867 solid 2px;
+  display: block;
+}
+
+.aside-link{
+  padding: 10px;
+}
+
+.aside-link p{
+  display: inline-block;
+  width: 90%;
+}
+
+.div-menu{
+  padding-top: 30px;
+}
+
+.div-contact{
+  bottom: 0;
+  position: absolute;
+  margin-bottom: 250px;
 }
 
 main{
@@ -89,8 +113,21 @@ h3{
 }
 
 p{
-  font-size: 16px;
+  font-size: 14px;
   color: #373867;
+  padding-bottom: 20px;
+}
+
+button{
+  padding: 10px;
+  border-radius: 5px;
+  color: #373867;
+  background-color: #ffffff;
+}
+
+button:hover{
+  color: #ffffff;
+  background-color: #373867;
 }
 
 section{
@@ -110,15 +147,65 @@ article{
 .article-1 img{
   float: left;
   padding: 20px;
+  width: 100px;
 }
 
-.article-icon{
-  width: 100px;
+.article-2{
+  padding: 20px 30px 0px 0px;
+}
+
+.article-2 #history-text1{
+  font-size: 16px;
+}
+
+.article-3{
+  width: 30%;
+  padding-right: 20px;
+}
+
+article ol{
+  list-style: decimal;
+  padding-left: 20px;
+}
+
+article ol li{
+  color: #373867;
+  padding: 0px 0px 5px 5px;
 }
 
 #img-home{
   width: 507px;
   border-radius: 10px;
+}
+
+form{
+  padding: 30px 0px 0px 250px;
+}
+
+form label{
+  display: block;
+  padding-bottom: 5px;
+}
+
+form input[type="text"]{
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+form textarea{
+  width: 250px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+form button{
+  padding: 10px 30px;
+  width: 250px;
+}
+
+.form-input-text, .form-radio{
+  padding-bottom: 15px;
 }
 
 footer{
