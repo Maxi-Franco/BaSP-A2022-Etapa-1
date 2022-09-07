@@ -37,36 +37,36 @@
           <i class="fa-solid fa-magnifying-glass"></i>
           <input type="text" placeholder="search">
         </div>
-        <div>
+        <div class="div-menu">
           <div>
             <label>Menu</label>
           </div>
-          <div>
+          <div class="aside-link">
             <i class="fa-solid fa-house"></i>
             <a href="#home">Home</a>
           </div>
-          <div>
+          <div class="aside-link">
             <i class="fa-solid fa-user-plus"></i>
             <a href="#">Sign Up</a>
           </div>
-          <div>
+          <div class="aside-link">
             <i class="fa-solid fa-user"></i>
             <a href="#">Sign In</a>
           </div>
         </div>
-        <div>
+        <div class="div-contact">
           <div>
             <label>Contact</label>
           </div>
-          <div>
+          <div class="aside-link">
             <i class="fa-solid fa-envelope"></i>
-            <p>info@gigatech.com</p>
+            <a href="#">info@gigatech.com</a>
           </div>
-          <div>
+          <div class="aside-link">
             <i class="fa-solid fa-mobile-screen-button"></i>
             <p>(+000) 000-0000000</p>
           </div>
-          <div>
+          <div class="aside-link">
             <i class="fa-solid fa-map-pin"></i>
             <p>1234 SomeWhere Road, SomeWhere XX 000-0000</p>
           </div>
@@ -94,7 +94,7 @@
         <h2>About Trackgenix</h2>
         <div class="div-article-1">
           <article class="article-1">
-            <img class="article-icon" src="assets/light-bulb.png" alt="">
+            <img src="assets/light-bulb.png" alt="">
             <h3>Productivity booster</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugit consectetur modi, suscipit explicabo 
@@ -102,7 +102,7 @@
             </p>
           </article>
           <article class="article-1">
-            <img class="article-icon" src="assets/shhet-search.png" alt="">
+            <img src="assets/shhet-search.png" alt="">
             <h3>Work traceability</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugit consectetur modi, suscipit explicabo 
@@ -112,7 +112,7 @@
         </div>
         <div class="div-article-1">
           <article class="article-1">
-            <img class="article-icon" src="assets/user.png" alt="">
+            <img src="assets/user.png" alt="">
             <h3>Leadership & Team management</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugit consectetur modi, suscipit explicabo 
@@ -120,7 +120,7 @@
             </p>
           </article>
           <article class="article-1">
-            <img class="article-icon" src="assets/hand.png" alt="">
+            <img src="assets/hand.png" alt="">
             <h3>Decision making</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugit consectetur modi, suscipit explicabo 
@@ -133,7 +133,7 @@
         <h2>Functions</h2>
         <div class="div-article-1">
           <article class="article-1">
-            <img class="article-icon" src="assets/clock.png" alt="">
+            <img src="assets/clock.png" alt="">
             <h3>Record of hours</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugit consectetur modi, suscipit explicabo 
@@ -141,7 +141,7 @@
             </p>
           </article>
           <article class="article-1">
-              <img class="article-icon" src="assets/sheet.png" alt="">
+              <img src="assets/sheet.png" alt="">
               <h3>Reports</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugit consectetur modi, suscipit explicabo 
@@ -151,7 +151,7 @@
         </div>
         <div class="div-article-1">
           <article class="article-1">
-            <img class="article-icon" src="assets/nut.png" alt="">
+            <img src="assets/nut.png" alt="">
             <h3>Resource management</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugit consectetur modi, suscipit explicabo 
@@ -159,7 +159,7 @@
             </p>
           </article>
           <article class="article-1">
-            <img class="article-icon" src="assets/person.png" alt="">
+            <img src="assets/person.png" alt="">
             <h3>Multiple roles</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugit consectetur modi, suscipit explicabo 
@@ -170,60 +170,63 @@
       </section>
       <section id="information">
         <h2>More information</h2>
-        <form action="">
-          <label for="txtInfoName">Name</label>
-          <input id="txtInfoName" type="text" placeholder="text your name here">
-          <label for="txtInfoEmail">Email</label>
-          <input id="txtInfoEmail" type="text" placeholder="text your email here">
-          <label>Contact area</label>
-          <input id="btnInfoHumanResources" type="radio" value="Human Resources">
-          <label for="btnInfoHumanResources">Human Resources</label>
-          <input id="btnInfoSystems" type="radio" value="Systems">
-          <label for="btnInfoSystems">Systems</label>
-          <input id="btnInfoCommercialization" type="radio" value="Commercialization">
-          <label for="btnInfoCommercialization">Commercialization</label>
-          <label for="txtInfoMessage">Message</label>
-          <textarea id="txtInfoMessage" name="Message" cols="30" rows="10"></textarea>
+        <form>
+          <div class="form-input-text">
+            <label for="txtInfoName">Name</label>
+            <input id="txtInfoName" type="text" placeholder="text your name here">
+          </div>
+          <div class="form-input-text">
+            <label for="txtInfoEmail">Email</label>
+            <input id="txtInfoEmail" type="text" placeholder="text your email here">
+          </div>
+          <div class="form-radio">
+            <label>Contact area:</label>
+            <label><input type="radio" name="contact" value="Human Resources">Human Resources</label>        
+            <label><input type="radio" name="contact" value="Systems">Systems</label>
+            <label><input type="radio" name="contact" value="Commercialization">Commercialization</label>
+          </div>
+          <div class="form-input-text">
+            <label for="txtInfoMessage">Message</label>
+            <textarea id="txtInfoMessage" name="Message" placeholder="text your message here"></textarea>
+          </div>
           <button id="btnInfoSend">Send</button>
         </form>
       </section>
       <section id="ourHistory">
         <h2>Our History</h2>
         <h3>GigaTech Software Solutions SA</h3>
-        <article>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in dignissimos, sunt quaerat inventore dolore 
-              recusandae similique ratione ut expedita nobis pariatur illo fugit! Ea laboriosam quasi aperiam beatae magni.
-            </p>
-          </div>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in dignissimos, sunt quaerat inventore dolore 
-              recusandae similique ratione ut expedita nobis pariatur illo fugit! Ea laboriosam quasi aperiam beatae magni.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in dignissimos, sunt quaerat inventore dolore 
-              recusandae similique ratione ut expedita nobis pariatur illo fugit! Ea laboriosam quasi aperiam beatae magni.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in dignissimos, sunt quaerat inventore dolore 
-              recusandae similique ratione ut expedita nobis pariatur illo fugit! Ea laboriosam quasi aperiam beatae magni.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in dignissimos, sunt quaerat inventore dolore 
-              recusandae similique ratione ut expedita nobis pariatur illo fugit! Ea laboriosam quasi aperiam beatae magni.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in dignissimos, sunt quaerat inventore dolore 
-              recusandae similique ratione ut expedita nobis pariatur illo fugit! Ea laboriosam quasi aperiam beatae magni.
-            </p>
-          </div>
+        <article class="article-2">
+          <p id="history-text1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in dignissimos, sunt quaerat inventore dolore 
+            recusandae similique ratione ut expedita nobis pariatur illo fugit! Ea laboriosam quasi aperiam beatae magni.
+          </p>
+        </article>
+        <article class="article-2">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in dignissimos, sunt quaerat inventore dolore 
+            recusandae similique ratione ut expedita nobis pariatur illo fugit! Ea laboriosam quasi aperiam beatae magni.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in dignissimos, sunt quaerat inventore dolore 
+            recusandae similique ratione ut expedita nobis pariatur illo fugit! Ea laboriosam quasi aperiam beatae magni.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in dignissimos, sunt quaerat inventore dolore 
+            recusandae similique ratione ut expedita nobis pariatur illo fugit! Ea laboriosam quasi aperiam beatae magni.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in dignissimos, sunt quaerat inventore dolore 
+            recusandae similique ratione ut expedita nobis pariatur illo fugit! Ea laboriosam quasi aperiam beatae magni.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in dignissimos, sunt quaerat inventore dolore 
+            recusandae similique ratione ut expedita nobis pariatur illo fugit! Ea laboriosam quasi aperiam beatae magni.
+          </p>
         </article>
       </section>
       <section id="productsServices">
         <h2>Products & Services</h2>
-        <article>
+        <article class="article-3">
           <h3>Products</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum voluptas velit quas dolor reiciendis 
@@ -236,7 +239,7 @@
             <li>Additional features</li>
           </ol>
         </article>
-        <article>
+        <article class="article-3">
           <h3>Business</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum voluptas velit quas dolor reiciendis 
@@ -249,7 +252,7 @@
             <li>Blog</li>
           </ol>
         </article>
-        <article>
+        <article class="article-3">
           <h3>Support</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum voluptas velit quas dolor reiciendis 
