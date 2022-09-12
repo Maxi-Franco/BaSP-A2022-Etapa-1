@@ -1,0 +1,15 @@
+footer{
+  background-color: #D9D9D9;
+  color: #373867;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer li{
+  display: inline;
+  padding: 0 20px;
+}
+
+footer p{
+  padding: 10px 0;
+}

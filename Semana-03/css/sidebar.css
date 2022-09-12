@@ -1,0 +1,54 @@
+
+aside{
+  float: left;
+  position: fixed;
+  background-color: #D9D9D9;
+  width: 200px;
+  height: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  /*z-index: -1;*/
+}
+
+aside a{
+  text-decoration: none;
+}
+
+aside a:hover{
+  background-color: #373867;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+aside i{
+  color: #373867;
+}
+
+aside i:hover, :focus{
+  color: #ffffff;
+}
+
+aside label{
+  border-bottom: #373867 solid 2px;
+  display: block;
+}
+
+.aside-link{
+  padding: 10px;
+}
+
+.aside-link p{
+  display: inline-block;
+  width: 85%;
+}
+
+.div-menu{
+  padding-top: 30px;
+}
+
+.div-contact{
+  bottom: 0;
+  position: absolute;
+  margin-bottom: 250px;
+}
