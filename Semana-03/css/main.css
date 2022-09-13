@@ -10,17 +10,22 @@ section{
   justify-content: space-between;
 }
 
-section .home{
+section.home{
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column-reverse;
+  flex-direction: column;
   margin-top: 20px;
 }
 
-.home img{
+section .home-1{
+  order: 2;
+}
+
+section .home-2{
   width: 100%;
   margin: auto;
   border-radius: 10px;
+  order: 1;
 }
 
 article ol{
@@ -124,4 +129,22 @@ form button{
 .form-input-text, 
 .form-radio{
   padding-bottom: 15px;
+}
+
+@media screen and (min-width: 834px) {
+  
+
+  section.home{
+    flex-direction: row;
+    
+  }
+  
+  section .home-1{
+    order: 1;
+  }
+  
+  section .home-2{
+    order: 2;
+  }
+
 }
