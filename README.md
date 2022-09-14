@@ -26,9 +26,8 @@ new styles file. New image files in the assets folder.
 The page now is responsive with CSS Flexbox
 
 ### How to open
-```
 Follow this URL:
-
+```
 https://maxi-franco.github.io/BaSP-A2022-Etapa-1/Semana-03/index.html
 ```
 
