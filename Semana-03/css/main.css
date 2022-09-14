@@ -131,14 +131,17 @@ form button{
   padding-bottom: 15px;
 }
 
-@media screen and (min-width: 834px) {
-  
+@media screen and (min-width: 1024px){
+  main{
+    margin-left: 200px;
+    padding-left: 0px;
+  }
 
   section.home{
+    display: flex;
     flex-direction: row;
-    
   }
-  
+
   section .home-1{
     order: 1;
   }
@@ -146,5 +149,4 @@ form button{
   section .home-2{
     order: 2;
   }
-
 }
