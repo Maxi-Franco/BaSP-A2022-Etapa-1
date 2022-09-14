@@ -144,9 +144,42 @@ form button{
 
   section .home-1{
     order: 1;
+    width: 50%;
   }
   
   section .home-2{
     order: 2;
+    width: 50%;
   }
+
+  .div-article-1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .our-history{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .article-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+/**/
+  .products-services{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article-3{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
 }
