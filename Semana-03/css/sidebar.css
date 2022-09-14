@@ -12,6 +12,7 @@ aside{
   display: flex;
   flex-direction: column;
   padding-top: 50px;
+  margin: 20px ;
 }
 
 .aside-container a{

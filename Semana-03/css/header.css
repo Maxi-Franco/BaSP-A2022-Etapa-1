@@ -28,5 +28,7 @@ header .menu-header{
 @media screen and (min-width: 834px) {
   header .menu-header{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
