@@ -1,0 +1,1 @@
+console.log('Console log desde 05 js');
