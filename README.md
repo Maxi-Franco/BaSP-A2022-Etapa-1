@@ -31,6 +31,13 @@ Follow this URL:
 https://maxi-franco.github.io/BaSP-A2022-Etapa-1/Semana-03/index.html
 ```
 
+## Week 04
+Introductory exercises to JavaScript solved in the console
 
+### How to open
+Follow this URL and open de browser console
+```
+https://maxi-franco.github.io/BaSP-A2022-Etapa-1/Semana-04/index.html
+```
 
 _By Maxi Franco_
