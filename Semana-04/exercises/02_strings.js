@@ -73,18 +73,20 @@ console.log('Posición del primer espacio en blanco: ' + (blankSpace + 1));
 console.log('----------------');
 
 /* f.
-    Crear una variable de tipo string con al menos 2 palabras largas 
-    (10 caracteres y algún espacio entre medio). Utilizar los métodos de los 
-    ejercicios anteriores para generar un nuevo string que tenga la primera 
-    letra de ambas palabras en mayúscula y las demás letras en minúscula 
-    (utilizar indexOf, substring, toUpperCase, toLowerCase y el operador +).
+  Crear una variable de tipo string con al menos 2 palabras largas 
+  (10 caracteres y algún espacio entre medio). Utilizar los métodos de los 
+  ejercicios anteriores para generar un nuevo string que tenga la primera 
+  letra de ambas palabras en mayúscula y las demás letras en minúscula 
+  (utilizar indexOf, substring, toUpperCase, toLowerCase y el operador +).
 */
 console.log('-Exercise 2.f:');
 
-var text2e = 'consectetur adipisicing';
-var upperFirst2e = text2e.substring(0,1).toUpperCase();
-var lowerText2e = text2e.slice(1).toLowerCase();
+var text2e = 'consSSKJDFtur adipISIcing';
+var upperFirst2e = text2e.substring(0, 1).toUpperCase();
+var lowerFirst2e = text2e.substring(1, 12).toLowerCase();
+var upperSecond2e = text2e.substring(13, 15).toUpperCase();
+var lowerSecond2e = text2e.substring(15, 24).toLowerCase();
 
 console.log('Texto: ' + text2e);
-console.log('Modificado: ' + upperFirst2e + lowerText2e);
+console.log('Modificado: ' + upperFirst2e + lowerFirst2e + ' ' + upperSecond2e + lowerSecond2e);
 console.log('----------------');
