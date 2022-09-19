@@ -1,55 +1,64 @@
 aside{
   display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-around;
   position: fixed;
-  flex-direction: column;
-  background-color: #d9d9d9;
-  width: 200px;
+  background-color: #e85353;
+  width: 240px;
   height: 100%;
-  margin-top: 70px;
-}
-
-.aside-container{
-  display: flex;
-  flex-direction: column;
-  padding-top: 50px;
-  margin: 20px ;
-}
-
-.aside-container a{
-  padding-top: 20px;
-}
-
-aside label{
-  display: block;
-  border-bottom: #373867 solid 2px;
-}
-
-aside span{
-  margin: 20px 0;
-  color: #373867;
 }
 
 aside a{
   text-decoration: none;
-  color: #373867;
 }
 
-aside a:hover{
-  background-color: #373867;
-  color: #ffffff;
-  border-radius: 5px;
-  padding: 10px;
+aside span{
+  color: #373867;
+  font-weight: bold;
+}
+
+aside p{
+  color: #373867;
+  font-size: 15px;
 }
 
 aside i{
   color: #373867;
 }
 
-aside i:hover{
-  color: #ffffff;
+.flex-aside{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px ; 
 }
 
-@media screen and (min-width: 1024px){
+.flex-aside-1{
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: center;
+  padding: 10px ; 
+}
+
+.flex-aside-1 i{
+  padding-right: 10px;
+}
+
+.flex-aside-1 input{
+  padding: 5px;
+  width: auto;
+  border-radius: 5px;
+}
+
+.flex-aside p{
+  padding-top: 10px;
+}
+
+
+@media screen and (min-width: 1512px){
   aside{
     display: flex;
   }
