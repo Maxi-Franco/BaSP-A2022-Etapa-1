@@ -1,5 +1,4 @@
 console.log('--EXERCISE 5: FOR');
-console.log('----------------');
 
 /* a.
   Crear un array que contenga 5 palabras y recorrer dicho array utilizando 
@@ -8,14 +7,11 @@ console.log('----------------');
 */
 console.log('-Exercise 5.a:');
 
-var words = ['red', 'blue', 'yellow', 'green', 'black'];
+var figures = ['sqare', 'triangle', 'circle', 'pentagon', 'hexagon'];
 
-for (var i = 0; i < words.length; i++) {
-  alert(words[i]);  
+for (var i = 0; i < figures.length; i++) {
+  alert(figures[i]);  
 }
-
-console.log('Palabras: ' + words);
-console.log('----------------');
 
 /* b.
   Al array anterior convertir la primera letra de cada palabra en mayúscula 
@@ -23,17 +19,15 @@ console.log('----------------');
 */
 console.log('-Exercise 5.b:');
 
-var wordsUpper = [];
-var wordsLower = [];
+var figuresUpper = ['sqare', 'triangle', 'circle', 'pentagon', 'hexagon'];
+var wordUpper = [];
+var wordLower = [];
 
-for (var i = 0; i < words.length; i++) {
-  wordsUpper = words[i].substring(0, 1).toUpperCase();
-  wordsLower = words[i].substring(1, 100).toLowerCase();
-  alert(wordsUpper + wordsLower);
+for (var i = 0; i < figuresUpper.length; i++) {
+  wordUpper = figuresUpper[i].substring(0, 1).toUpperCase();
+  wordLower = figuresUpper[i].substring(1, figuresUpper[i].length).toLowerCase();
+  alert(wordUpper + wordLower);
 }
-
-console.log('Palabras: ' + wordsUpper + wordsLower);
-console.log('----------------');
 
 /* c.
   Crear una variable llamada “sentence” que tenga un string vacío, luego al 
@@ -44,14 +38,13 @@ console.log('----------------');
 console.log('-Exercise 5.c:');
 
 var sentence = '';
+var figuresA = ['sqare ', 'triangle ', 'circle ', 'pentagon ', 'hexagon '];
 
-for (var i = 0; i < words.length; i++) {
-  sentence += words[i].toString(words);
+for (var i = 0; i < figuresA.length; i++) {
+  sentence += figuresA[i].toString(figuresA);
 }
 
 alert(sentence);
-console.log(sentence);
-console.log('----------------');
 
 /* d.
   Crear una array vacío y con un bucle for de 10 repeticiones. Llenar el 
@@ -69,4 +62,3 @@ for (var i = 0; i < 10; i++) {
 }
 
 console.log(array5d);
-console.log('----------------');
