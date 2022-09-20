@@ -8,12 +8,10 @@ console.log('----------------');
 */
 console.log('-Exercise 3.a:');
 
-var month = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 
-              'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+var month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
+              'August', 'September', 'October', 'November', 'December'];
 
-console.log('Mes 5: ' + month[4]);
-console.log('Mes 11: ' + month[10]);
-console.log('----------------');
+console.log('Mes 5: ' + month[4] + ', Mes 11: ' + month[10]);
 
 /* b.
   Ordenar el array de meses alfabéticamente y mostrarlo por consola 
@@ -21,11 +19,12 @@ console.log('----------------');
 */
 console.log('-Exercise 3.b:');
 
-var monthAlph = month.sort();
+var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
+              'August', 'September', 'October', 'November', 'December'];
 
-console.log('Meses alfabéticamente:');
-console.table(monthAlph);
-console.log('----------------');
+var monthsAZ = months.sort();
+
+console.table(monthsAZ);
 
 /* c.
   Agregar un elemento al principio y al final del array 
@@ -33,12 +32,12 @@ console.log('----------------');
 */
 console.log('-Exercise 3.c:');
 
-month.unshift('Black');
-month.push('White');
+var colorsAdd = ['Red', 'Blue', 'Yellow', 'Violet', 'Green']
 
-console.log('Agregar elementos');
-console.table(month);
-console.log('----------------');
+colorsAdd.unshift('Black');
+colorsAdd.push('White');
+
+console.table(colorsAdd);
 
 /* d.
   Quitar un elemento del principio y del final del array 
@@ -46,23 +45,23 @@ console.log('----------------');
 */
 console.log('-Exercise 3.d:');
 
-month.shift();
-month.pop();
+var colorsLess = ['Black', 'Red', 'Blue', 'Yellow', 'Violet', 'Green', 'White']
 
-console.log('Quitar elementos');
-console.table(month);
-console.log('----------------');
+colorsLess.shift();
+colorsLess.pop();
+
+console.table(colorsLess);
 
 /* e.
   Invertir el orden del array (utilizar reverse).
 */
 console.log('-Exercise 3.e:');
 
-var monthReverse = month.reverse();
+var numbers123 = [1, 2, 3, 4, 5, 6, 7 , 8, 9, 10];
 
-console.log('Reverse');
-console.table(monthReverse);
-console.log('----------------');
+var numberReverse = numbers123.reverse();
+
+console.table(numberReverse);
 
 /* f.
   Unir todos los elementos del array en un único string 
@@ -70,10 +69,12 @@ console.log('----------------');
 */
 console.log('-Exercise 3.f:');
 
-var monthSeparated = month.join('-');
+var months123 = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
+              'August', 'September', 'October', 'November', 'December'];
 
-console.log(monthSeparated);
-console.log('----------------');
+var monthsSeparated = months123.join('-');
+
+console.log(monthsSeparated);
 
 /* g.
   Crear una copia del array de meses que contenga 
@@ -81,9 +82,9 @@ console.log('----------------');
 */
 console.log('-Exercise 3.g:');
 
-var month = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 
-              'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
-var monthSlice = month.slice(4, 11);
+var year = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
+              'August', 'September', 'October', 'November', 'December'];
 
-console.table(monthSlice);
-console.log('----------------');
+var yearSlice = year.slice(4, 11);
+
+console.table(yearSlice);
