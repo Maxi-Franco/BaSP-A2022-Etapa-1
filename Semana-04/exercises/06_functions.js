@@ -1,5 +1,4 @@
 console.log('--EXERCISE 6: FUNCTIONS');
-console.log('----------------');
 
 /* a.
   Crear una función suma que reciba dos valores numéricos y retorne 
@@ -8,19 +7,12 @@ console.log('----------------');
 */
 console.log('-Exercise 6.a:');
 
-var value16a = 3;
-var value26a = 5;
-
-function suma(_num1, _num2){
-  return _num1 + _num2;
+function add(_num1, _num2){
+  return console.log(_num1 + _num2);
 }
 
-var addition6a = suma(value16a,value26a);
+add(3,5);
 
-console.log('Value 1: ' + value16a);
-console.log('Value 2: ' + value26a);
-console.log('Addition: ' + addition6a);
-console.log('----------------');
 
 /* b.
   A la función suma anterior, agregarle una validación para controlar si 
@@ -30,23 +22,15 @@ console.log('----------------');
 */
 console.log('-Exercise 6.b:');
 
-function addition(_num1, _num2, _message){
-  if (!isNaN(_num1) && !isNaN(_num2)) {
-    return _num1 + _num2;
+function addition(_value1, _value2){
+  if (!isNaN(_value1) && !isNaN(_value2)) {
+    return alert(_value1 + _value2);
   } else {
-    return _message;
+    return alert('b. [x] values must be numbers');
   }
 }
 
-var value16b = 3;
-var value26b = 'd';
-var message6b = 'error: los valores deben ser numéricos';
-var addition6b = addition(value16b,value26b,message6b);
-
-console.log('Value 1: ' + value16b);
-console.log('Value 2: ' + value26b);
-console.log('Addition: ' + addition6b);
-console.log('----------------');
+//  addition('F',20);
 
 /* c.
   Aparte, crear una función validateInteger que reciba un número como 
@@ -55,18 +39,13 @@ console.log('----------------');
 console.log('-Exercise 6.c:');
 
 function validateInteger(_val){
-  if (!isNaN(_val)) {
+  if (Number.isInteger(_val)){
     return true;
-  } else {
-    return false;
   }
+  return false;
 }
 
-var value6c = 58;
-
-console.log('Value: ' + value6c)
-console.log(validateInteger(value6c));
-console.log('----------------');
+console.log(validateInteger(74));
 
 /* d.
   A la función suma del ejercicio 6b) agregarle una llamada a la función 
@@ -76,23 +55,14 @@ console.log('----------------');
 */
 console.log('-Exercise 6.d:');
 
-function addition2(_num1, _num2, _message){  
+function addition2(_num1, _num2){  
   if (validateInteger(_num1) && validateInteger(_num2)) {
-    return _num1 + _num2;
-  } else {
-    return _message + parseInt(_num1) + ' ' + parseInt(_num2);
+    return alert(_num1 + _num2);
   }
+  return alert('[x] values must be integer. ' + Math.round(_num1) + ' ' + Math.round(_num2));
 }
 
-var value16d = 10;
-var value26d = 'j';
-var message6d = 'error: los valores deben ser enteros. ';
-var addition6d = addition2(value16d,value26d,message6d);
-
-console.log('Value 1: ' + value16d);
-console.log('Value 2: ' + value26d);
-console.log('Addition: ' + addition6d);
-console.log('----------------');
+//  addition2(6,3.2);
 
 /* e.
   Convertir la validación del ejercicio 6d) en una función separada y 
@@ -100,6 +70,18 @@ console.log('----------------');
 */
 console.log('-Exercise 6.e:');
 
+function becomeInteger(_val){
+  if (!Number.isInteger(_val)){
+    return parseInt(_val);
+  }
+}
 
-console.log();
-console.log('----------------');
+function addition3(_num1, _num2){  
+  if (validateInteger(_num1) && validateInteger(_num2)) {
+    return alert(becomeInteger(_num1) + becomeInteger(_num2));
+  } else {
+    return alert('[x] values must be integer. ' + Math.round(_num1) + ' ' + Math.round(_num2));
+  }
+}
+
+//  addition3(5,3.2);
