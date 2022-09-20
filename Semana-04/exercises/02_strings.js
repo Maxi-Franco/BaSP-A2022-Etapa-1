@@ -1,5 +1,4 @@
 console.log('--EXERCISE 2: STRINGS');
-console.log('----------------');
 
 /* a.
   Crear una variable de tipo string con al menos 10 caracteres y 
@@ -10,9 +9,7 @@ console.log('-Exercise 2.a:');
 var text2a1 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit.';
 var text2a2 = text2a1.toUpperCase(text2a1);
 
-console.log('Texto: ' + text2a1);
 console.log('Texto a mayúsculas: ' + text2a2);
-console.log('----------------');
 
 /* b.
   Crear una variable de tipo string con al menos 10 caracteres y 
@@ -24,9 +21,7 @@ console.log('-Exercise 2.b:');
 var text2b = 'Lorem ipsum dolor sit amet consectetur adipisicing elit.';
 var subText2b = text2b.substring(0, 5);
 
-console.log('Texto: ' + text2b);
-console.log('Subtexto: ' + subText2b); 
-console.log('----------------');
+console.log('Text: ' + text2b + ' Subtext: ' + subText2b); 
 
 /* c.
   Crear una variable de tipo string con al menos 10 caracteres y generar 
@@ -38,9 +33,7 @@ console.log('-Exercise 2.c:');
 var text2c = 'Lorem ipsum dolor sit amet consectetur adipisicing elit.';
 var subText2c = text2c.substring(text2c.length - 3);
 
-console.log('Texto: ' + text2c);
-console.log('Sub texto: ' + subText2c); 
-console.log('----------------');
+console.log('Text: ' + text2c + ' Subtext: ' + subText2c); 
 
 /* d.
   Crear una variable de tipo string con al menos 10 caracteres y generar 
@@ -54,9 +47,7 @@ var text2d = 'lorem ipsum dolor sit amet consectetur adipisicing elit.';
 var upperFirst = text2d.substring(0,1).toUpperCase();
 var lowerText = text2d.slice(1).toLowerCase();
 
-console.log('Texto: ' + text2d);
-console.log('Modificado: ' + upperFirst + lowerText); 
-console.log('----------------');
+console.log('Text: ' + text2d + ' Modified: ' + upperFirst + lowerText); 
 
 /* e.
   Crear una variable de tipo string con al menos 10 caracteres y algún 
@@ -68,9 +59,8 @@ console.log('-Exercise 2.e:');
 var text2e = 'Lorem ipsum dolor sit amet consectetur adipisicing elit.';
 var blankSpace = text2e.indexOf(' ');
 
-console.log('Texto: ' + text2e);
-console.log('Posición del primer espacio en blanco: ' + (blankSpace + 1));
-console.log('----------------');
+console.log('Text: ' + text2e);
+console.log('Blank space position: ' + (blankSpace + 1));
 
 /* f.
   Crear una variable de tipo string con al menos 2 palabras largas 
@@ -81,12 +71,10 @@ console.log('----------------');
 */
 console.log('-Exercise 2.f:');
 
-var text2e = 'consSSKJDFtur adipISIcing';
+var text2e = 'conSECtetuR aDIPisicINg';
 var upperFirst2e = text2e.substring(0, 1).toUpperCase();
-var lowerFirst2e = text2e.substring(1, 12).toLowerCase();
-var upperSecond2e = text2e.substring(13, 15).toUpperCase();
-var lowerSecond2e = text2e.substring(15, 24).toLowerCase();
+var lowerFirst2e = text2e.substring(1, text2e.indexOf(' ')).toLowerCase();
+var upperSecond2e = text2e.substring(text2e.indexOf(' '), text2e.indexOf(' ') + 2).toUpperCase();
+var lowerSecond2e = text2e.substring(text2e.indexOf(' ') + 2, text2e.length).toLowerCase();
 
-console.log('Texto: ' + text2e);
-console.log('Modificado: ' + upperFirst2e + lowerFirst2e + ' ' + upperSecond2e + lowerSecond2e);
-console.log('----------------');
+console.log('Text: ' + text2e + ' Modified: ' + upperFirst2e + lowerFirst2e + upperSecond2e + lowerSecond2e);
