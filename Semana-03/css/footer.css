@@ -2,8 +2,8 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #373867;
-  color: #d9d9d9;
+  background-color: #d9d9d9;
+  color: #373867;
   padding: 10px 0;
 }
 
@@ -14,5 +14,5 @@ footer i{
 
 footer p{
   padding-top: 10px;
-  color: #d9d9d9;
+  color: #373867;
 } 
