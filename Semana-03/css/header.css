@@ -41,7 +41,7 @@ header a{
   color: #fff;
 }
 
-@media screen and (max-width: 390px){
+@media screen and (max-width: 391px){
   .flex-menu{
     display: flex;
     flex-direction: row; 
@@ -50,7 +50,7 @@ header a{
     padding: 20px;
   }
   
-  #nav-menu{
+  .header #nav-menu{
     display: none;
   }
 }
