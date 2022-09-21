@@ -5,7 +5,8 @@ aside{
   flex-wrap: wrap;
   justify-content: space-around;
   position: fixed;
-  background-color: #e85353;
+  background-color: #d9d9d9;
+  padding-bottom: 100px;
   width: 240px;
   height: 100%;
 }
@@ -32,7 +33,7 @@ aside i{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 20px ; 
+  padding: 20px; 
 }
 
 .flex-aside-1{
