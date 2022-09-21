@@ -127,11 +127,12 @@ section.flex-prodServ{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 50px;
 }
 
 .box-prodServ ol{
   justify-content: center;
-  
+  list-style: decimal;
 }
 
 /* -------------------------------------------------- media Queries */
@@ -152,7 +153,7 @@ section.flex-prodServ{
 @media screen and (min-width: 1512px){
   main{
     width: 80%;
-    margin-left: 10%;
+    margin-left: 300px;
     padding: 0 10px;
   }
 
@@ -181,5 +182,30 @@ section.flex-prodServ{
   }
   .box-history{
     width: 50%;
+  }
+
+  /*------------------------*/
+
+  section.flex-prodServ{
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .flex-box-prodServ{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+  }
+
+  .box-prodServ{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    padding: 0 30px;
+  }
+  
+  .box-prodServ ol{
+    justify-content: center;
   }
 }
