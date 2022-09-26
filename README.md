@@ -40,4 +40,13 @@ Follow this URL and open de browser console
 https://maxi-franco.github.io/BaSP-A2022-Etapa-1/Semana-04/index.html
 ```
 
+## Week 06
+Sign-Up and Login views were created in HTML-5 with responsive styles in CSS and functionalities with JavaScript.
+
+### How to open
+Follow this URL and open de browser console
+```
+https://maxi-franco.github.io/BaSP-A2022-Etapa-1/Semana-06/views/index.html
+```
+
 _By Maxi Franco_
