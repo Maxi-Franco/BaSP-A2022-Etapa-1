@@ -46,7 +46,7 @@ Sign-Up and Login views were created in HTML-5 with responsive styles in CSS and
 ### How to open
 Follow this URL and open de browser console
 ```
-https://maxi-franco.github.io/BaSP-A2022-Etapa-1/
+https://maxi-franco.github.io/BaSP-A2022-Etapa-1/Semana-06
 ```
 
 _By Maxi Franco_
