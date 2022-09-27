@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="../styles/login.css">
   <link rel="stylesheet" href="../styles/sign-up.css">
   <link rel="stylesheet" href="../styles/footer.css">
+  <script src="../javascript/sign-up.js"></script>
   <script src="../javascript/login.js"></script>
   <title>Trackgenix | Login</title>
 </head>
@@ -24,7 +25,7 @@
   <header class="header">
     <section class="flex-menu">
       <div class="box-menu"><i class="fa-solid fa-bars"></i></div>
-      <a  class="box-menu" href="#home">Trackgenix</a>
+      <a  class="box-menu" href="index.html">Trackgenix</a>
     </section>
     <nav id="nav-menu" class="flex-menu">
       <a class="box-menu" href="#about-trackgenix">About</a>
@@ -34,256 +35,59 @@
       <a class="box-menu" href="#products-services">Products & Services</a>
     </nav>
   </header>
-  <div class="principal">   
-    <aside>
-      <div class="flex-aside-1">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" placeholder="search">
-      </div>
-      <div class="flex-aside">
-        <span>Menu</span>
-        <a class="box-menu" href="#home"><i class="fa-solid fa-house"></i> Home</a>
-        <a class="box-menu" href="#"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
-        <a class="box-menu" href="#"><i class="fa-solid fa-user"></i> Sign In </a>
-      </div>
-      <div class="flex-aside">
-        <span>Contact</span>
-        <p><i class="fa-solid fa-envelope"></i> info@gigatech.com</p>
-        <p><i class="fa-solid fa-mobile-screen-button"></i> (+000) 000-0000000</p>
-        <p><i class="fa-solid fa-map-pin"></i> 1234 SomeWhere Road, SomeWhere XX 000-0000</p>
-      </div>
-    </aside>
-    <main>
-      <section>
+  
+  <aside>
+    <div class="flex-aside-1">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" placeholder="search">
+    </div>
+    <div class="flex-aside">
+      <span>Menu</span>
+      <a class="box-menu" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+      <a class="box-menu" href="sign-up.html"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
+      <a class="box-menu" href="login.html"><i class="fa-solid fa-user"></i> Login </a>
+    </div>
+    <div class="flex-aside">
+      <span>Contact</span>
+      <p><i class="fa-solid fa-envelope"></i> info@gigatech.com</p>
+      <p><i class="fa-solid fa-mobile-screen-button"></i> (+000) 000-0000000</p>
+      <p><i class="fa-solid fa-map-pin"></i> 1234 SomeWhere Road, SomeWhere XX 000-0000</p>
+    </div>
+  </aside>
 
-      </section>
-      <section>
-
-      </section>
-    </main>   
-    <!--
-    <main>
-      <section class="flex-home">
-        <div class="box-home">
-          <h1>Trackgenix</h1>
-          <h2>Make it easy to record hours worked on each project and work team at GigaTech Software Solutions SA</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit cum ad iusto quod, nemo quis, optio corrupt
-            i aliquid saepe quae ullam! Suscipit velit aspernatur porro quod nostrum quo, ipsam eveniet.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit cum ad iusto quod, nemo quis, optio corrupt
-            i aliquid saepe quae ullam! Suscipit velit aspernatur porro quod nostrum quo, ipsam eveniet.
-          </p>
-          <button>Learn more</button>
-        </div>
-        <div class="box-home">
-          <img src="assets/home-desktop.jpg" alt="Woman at the office interacting with a tablet next to a laptop.">
-        </div>
-      </section>
-      <h2>About Trackgenix</h2>
-      <section class="flex-about">
-        <div class="box-about">
-          <img src="assets/light-bulb.png" alt="Light bulb">
-          <div>
-            <h3>Productivity booster</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugit consectetur modi, suscipit explicabo
-              ea, ut voluptates ad earum architecto ipsum corporis velit neque error, laboriosam eligendi vel voluptate?
-            </p>
-          </div>
-        </div>
-        <div class="box-about">
-          <img src="assets/shhet-search.png" alt="Sheet search">
-          <div>
-            <h3>Work traceability</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugit consectetur modi, suscipit explicabo
-              ea, ut voluptates ad earum architecto ipsum corporis aliquam velit neque error, laboriosam eligendi vel
-              voluptate?
-            </p>
-          </div>
-        </div>
-        <div class="box-about">
-          <img src="assets/user.png" alt="User">
-          <div>
-            <h3>Leadership & Team management</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugit consectetur modi, suscipit explicabo
-              ea, ut voluptates ad earum architecto ipsum corporis aliquam velit neque error, laboriosam eligendi vel
-              voluptate?
-            </p>
-          </div>
-        </div>
-        <div class="box-about">
-          <img src="assets/hand.png" alt="Hand">
-          <div>
-            <h3>Decision making</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugit consectetur modi, suscipit explicabo
-              ea, ut voluptates ad earum architecto ipsum corporis aliquam velit neque error, laboriosam eligendi vel
-              voluptate?
-            </p>
-          </div>
-        </div>
-      </section>
-      <h2>Functions</h2>
-      <section class="flex-about">
-        <div class="box-about">
-          <img src="assets/clock.png" alt="">
-          <div>
-            <h3>Record of hours</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugit consectetur modi, suscipit explicabo
-              ea, ut voluptates ad earum architecto ipsum corporis aliquam velit neque error, laboriosam eligendi vel
-              voluptate?
-            </p>
-          </div>
-        </div>
-        <div class="box-about">
-          <img src="assets/sheet.png" alt="">
-          <div>
-            <h3>Reports</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugit consectetur modi, suscipit explicabo
-              ea, ut voluptates ad earum architecto ipsum corporis aliquam velit neque error, laboriosam eligendi vel
-              voluptate?
-            </p>
-          </div>
-        </div>
-        <div class="box-about">
-          <img src="assets/nut.png" alt="">
-          <div>
-            <h3>Resource management</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugit consectetur modi, suscipit explicabo
-              ea, ut voluptates ad earum architecto ipsum corporis aliquam velit neque error, laboriosam eligendi vel
-              voluptate?
-            </p>
-          </div>
-        </div>
-        <div class="box-about">
-          <img src="assets/person.png" alt="">
-          <div>
-            <h3>Multiple roles</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugit consectetur modi, suscipit explicabo
-              ea, ut voluptates ad earum architecto ipsum corporis aliquam velit neque error, laboriosam eligendi vel
-              voluptate?
-            </p>
-          </div>
-        </div>
-      </section>
-      <h2>More Information</h2>
-      <section class="flex-information">
+  <main class="main-login">
+    <section class="section-login">
+      <h1>Trackgenix</h1>
+      <h2>GigaTech Software Solutions SA</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt nihil fuga, quas eligendi et quam ex 
+        molestias accusamus sed sunt illo, quos reprehenderit quaerat? Laboriosam sed ea enim non iste?
+      </p>
+    </section>
+    
+    <section class="section-login">
+      <form>
+        <nav>
+          <a href="login.html">Login</a>
+          <a href="sign-up.html">Sign Up</a>
+        </nav>
         <div class="box-information">
-          <label>Name</label>
-          <input type="text" placeholder="text your name here">
-          <label>Email</label>
-          <input type="text" placeholder="text your email here">
+          <label>Email or User</label>
+          <input id="logEmail" type="text" placeholder="text your Email or User here">
+          <label>Password</label>
+          <input id="logPassword" type="password" placeholder="text your Password here">
         </div>
-        <div class="box-information">
-          <span>Contact area:</span>
-          <label><input type="radio" name="contact" value="Human Resources">Human Resources</label>
-          <label><input type="radio" name="contact" value="Systems">Systems</label>
-          <label><input type="radio" name="contact" value="Commercialization">Commercialization</label>
+        <div class="box-information-2">
+          <label><input type="checkbox" value="remember-checkbox"> Remember me</label>
+          <a href="">Forgot password or email?</a>
+          <button id="btnLogin">Login</button>
+          <label>Not registered?</label>
+          <button>Sign Up</button>
         </div>
-        <div class="box-information">
-          <label>Message</label>
-          <textarea name="Message" placeholder="text your message here"></textarea>
-          <button>Send</button>
-        </div>
-      </section>
-      <h2>Our History</h2>
-      <h3>GigaTech Software Solutions SA</h3>
-      <section class="flex-history">
-        <div class="box-history">
-          <p id="history">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in dignissimos, sunt quaerat inventore dolore
-            recusandae similique ratione ut expedita nobis pariatur illo fugit! Ea laboriosam quasi aperiam beatae magni.
-          </p>
-        </div>
-        <div class="box-history">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in dignissimos, sunt quaerat inventore dolore
-            recusandae similique ratione ut expedita nobis pariatur illo fugit! Ea laboriosam quasi aperiam beatae magni.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in dignissimos, sunt quaerat inventore dolore
-            recusandae similique ratione ut expedita nobis pariatur illo fugit! Ea laboriosam quasi aperiam beatae magni.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in dignissimos, sunt quaerat inventore dolore
-            recusandae similique ratione ut expedita nobis pariatur illo fugit! Ea laboriosam quasi aperiam beatae magni.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in dignissimos, sunt quaerat inventore dolore
-            recusandae similique ratione ut expedita nobis pariatur illo fugit! Ea laboriosam quasi aperiam beatae magni.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in dignissimos, sunt quaerat inventore dolore
-            recusandae similique ratione ut expedita nobis pariatur illo fugit! Ea laboriosam quasi aperiam beatae magni.
-          </p>
-        </div>
-      </section>
-      <section class="flex-prodServ">
-        <article>
-          <h2>Products & Services</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem error totam veritatis doloribus ipsa rerum omnis
-            debitis ipsam sapiente assumenda iusto sit, quae quaerat laboriosam fugit commodi officiis sed perspiciatis.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem error totam veritatis doloribus ipsa rerum omnis
-            debitis ipsam sapiente assumenda iusto sit, quae quaerat laboriosam fugit commodi officiis sed perspiciatis.
-          </p>
-        </article>
-        <article class="flex-box-prodServ">
-          <div class="box-prodServ">
-            <h3>Products</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum voluptas velit quas dolor reiciendis
-              minima labore neque aspernatur facilis sint, eveniet fuga harum minus hic deleniti adipisci laboriosam, quia
-              nemo!
-            </p>
-            <ol>
-              <li>Functionalities</li>
-              <li>Downloads</li>
-              <li>Integrations</li>
-              <li>Additional features</li>
-            </ol>
-          </div>
-          <div class="box-prodServ">
-            <h3>Business</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum voluptas velit quas dolor reiciendis
-              minima labore neque aspernatur facilis sint, eveniet fuga harum minus hic deleniti adipisci laboriosam, quia
-              nemo!
-            </p>
-            <ol>
-              <li>About us</li>
-              <li>Customers</li>
-              <li>Means</li>
-              <li>Blog</li>
-            </ol>
-          </div>
-          <div class="box-prodServ">
-            <h3>Support</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum voluptas velit quas dolor reiciendis
-              minima labore neque aspernatur facilis sint, eveniet fuga harum minus hic deleniti adipisci laboriosam, quia
-              nemo!
-            </p>
-            <ol>
-              <li>Aid</li>
-              <li>Tutorials</li>
-              <li>API</li>
-              <li>Contact</li>
-            </ol>
-          </div>
-        </article>
-      </section>
-    </main>
-     -->
-  </div>   
+      </form>
+    </section>
+  </main>
+  
   <footer>
     <nav>
       <i class="fa-brands fa-linkedin"></i>
