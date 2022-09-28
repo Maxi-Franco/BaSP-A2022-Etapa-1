@@ -54,7 +54,7 @@ window.onload = function(){
 
   loginEmail.onfocus = function(){
     loginEmail.classList.remove('border-green', 'border-red');
-  }
+  } 
   
   loginPassword.addEventListener('blur', function(){
     var verifyPassContLetters = containLetters(loginPassword.value);

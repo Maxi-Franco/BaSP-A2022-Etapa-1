@@ -3,7 +3,8 @@ body {
   background: linear-gradient( #373867 0%, #5254B2 100%)
 }
 
-aside{
+aside,
+footer{
   display: none;
 }
 
@@ -11,10 +12,8 @@ main{
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 100px;
-  
+  padding-top: 350px; 
 }
-
 
 form {
   display: flex;
@@ -23,7 +22,7 @@ form {
   align-items: center;
   background-color: #fff;
   border-radius: 15px;
-  height: 500px;
+  height: 100%;
   width: 400px;
 }
 
@@ -32,7 +31,7 @@ form {
   flex-direction: column;
   justify-content: space-between;
   width: 50%;
-  padding: 0 50px 0 50px;
+  padding: 0px 50px 0px 50px;
 }
 
 .section-login h1{
