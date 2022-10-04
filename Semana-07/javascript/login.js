@@ -102,14 +102,14 @@ window.onload = function(){
   function login(){
     var urlLoginParams = '?email=' + loginEmail.value + '&password=' + loginPassword.value;
     fetch(urlLogin + urlLoginParams)
-    .then(function(responseJson){
-      return responseJson.json();
-    })
     .then(function(response){
-      if (response.success === true){
-        alert(response.msg);
+      return response.json();
+    })
+    .then(function(data){
+      if (data.success === true){
+        alert(data.msg);
       } else {
-        throw new Error('Login failure :(');
+        alert('Login failure :(');
       }
     })
     .catch(function(error){
