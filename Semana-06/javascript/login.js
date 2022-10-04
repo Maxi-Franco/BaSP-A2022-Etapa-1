@@ -6,13 +6,19 @@ window.onload = function(){
   var passwordValid = false;
   var emailValid = false;
   var emailFormat = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
-  var numbers = ["0","1","2","3","4","5","6","7","8","9"];
-  var alphabet = ["q","w","e","r","t","y","u","i","o","p","a","s","d","f","g","h","j","k","l","ñ","z","x","c","v","b","n","m"];
+  var numbers = ['0','1','2','3','4','5','6','7','8','9'];
+  var alphabet = ['q','w','e','r','t','y','u','i','o','p','a','s','d','f','g','h','j','k','l','z','x','c','v','b','n','m'];
+
+  // ------- events / calls
+  var loginEmail = document.querySelector('#login-email');
+  var loginEmailError = document.querySelector('#login-email-error');
+  loginEmailError.classList.add('login-error');
   
-  // ------- event calls
-  var loginButton = document.querySelector('#btnLogin');
-  var loginEmail = document.querySelector('#logEmail');
-  var loginPassword = document.querySelector('#logPassword');
+  var loginPassword = document.querySelector('#login-password');
+  var loginPasswordError = document.querySelector('#login-password-error');
+  loginPasswordError.classList.add('login-error');
+
+  var loginButton = document.querySelector('#btn-login');
 
   // --------  functions
   function containNumbers(_data){
@@ -41,43 +47,51 @@ window.onload = function(){
     return contentLetters;
   }
   
-  // --------- processing
+  // --------- email processing
   loginEmail.addEventListener('blur', function(){
     if (emailFormat.test(loginEmail.value)){
       loginEmail.classList.add('border-green');
       emailValid = true;
     } else {
       loginEmail.classList.add('border-red');
+      loginEmailError.innerHTML = 'Invalid email';
       emailValid = false;
     }
   });
-
   loginEmail.onfocus = function(){
     loginEmail.classList.remove('border-green', 'border-red');
+    loginEmailError.innerHTML = '';
   } 
   
+  // --------- password processing
   loginPassword.addEventListener('blur', function(){
-    var verifyPassContLetters = containLetters(loginPassword.value);
-    var verifyPassContNumbers = containNumbers(loginPassword.value);
-    if (verifyPassContLetters && verifyPassContNumbers){
+    if (containLetters(loginPassword.value) && containNumbers(loginPassword.value)){
       loginPassword.classList.add('border-green');
       passwordValid = true;
     } else { 
       loginPassword.classList.add('border-red');
+      loginPasswordError.innerHTML = 'Invalid password';
       passwordValid = false;
     }
+    contentLetters = false;
+    contentNumbers = false;
   });
-
   loginPassword.onfocus = function(){
     loginPassword.classList.remove('border-green', 'border-red');
+    loginPasswordError.innerHTML = '';
   }
   
+  // --------- login button
   loginButton.addEventListener('click', function(e){
-    e.preventDefault();
+    e.preventDefault();    
     if (emailValid && passwordValid){
-      alert('Welcome!');
-    } else {
-      alert('Invalid email or password');
+      alert('Welcome! ' + loginEmail.value + ' ' + loginPassword.value);
+    } else if (!emailValid && passwordValid){
+      alert('Invalid email');
+    } else if (emailValid && !passwordValid){
+      alert('Invalid password');
+    } else if (!emailValid && !passwordValid){
+      alert('Invalid email & password');
     }
   });
 }
