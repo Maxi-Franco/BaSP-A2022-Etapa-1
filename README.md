@@ -44,9 +44,27 @@ https://maxi-franco.github.io/BaSP-A2022-Etapa-1/Semana-04/index.html
 Sign-Up and Login views were created in HTML-5 with responsive styles in CSS and functionalities with JavaScript.
 
 ### How to open
-Follow this URL and open de browser console
+Follow this URL for Login
 ```
 https://maxi-franco.github.io/BaSP-A2022-Etapa-1/Semana-06/views/login.html
+```
+Follow this URL for Sign Up
+```
+https://maxi-franco.github.io/BaSP-A2022-Etapa-1/Semana-06/views/sign-up.html
+```
+
+## Week 07
+SignUp and Login forms make an HTTP request by sending the data loaded in the form. 
+The request is only executed if pass all validations.
+
+### How to open
+Follow this URL for Login
+```
+https://maxi-franco.github.io/BaSP-A2022-Etapa-1/Semana-07/views/login.html
+```
+Follow this URL for Sign Up
+```
+https://maxi-franco.github.io/BaSP-A2022-Etapa-1/Semana-07/views/sign-up.html
 ```
 
 _By Maxi Franco_
