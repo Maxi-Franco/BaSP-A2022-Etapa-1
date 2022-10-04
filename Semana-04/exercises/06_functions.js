@@ -26,7 +26,7 @@ function addition(_value1, _value2){
   if (!isNaN(_value1) && !isNaN(_value2)) {
     return alert(_value1 + _value2);
   } else {
-    return alert('b. [x] values must be numbers');
+    return alert('[x] values must be numbers');
   }
 }
 
@@ -39,10 +39,7 @@ function addition(_value1, _value2){
 console.log('-Exercise 6.c:');
 
 function validateInteger(_val){
-  if (Number.isInteger(_val)){
-    return true;
-  }
-  return false;
+  return Number.isInteger(_val);
 }
 
 console.log(validateInteger(74));
@@ -57,9 +54,9 @@ console.log('-Exercise 6.d:');
 
 function addition2(_num1, _num2){  
   if (validateInteger(_num1) && validateInteger(_num2)) {
-    return alert(_num1 + _num2);
+    return console.log(_num1 + _num2);
   }
-  return alert('[x] values must be integer. ' + Math.round(_num1) + ' ' + Math.round(_num2));
+  return alert('[x] values must be integer. ' ) + Math.round(_num1) + ' ' + Math.round(_num2);
 }
 
 //  addition2(6,3.2);
