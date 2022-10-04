@@ -74,3 +74,8 @@ form {
 .border-red{
   border: 2px solid red;
 } 
+
+.signup-error{
+  font-size: 12px;
+  color: red;
+}
