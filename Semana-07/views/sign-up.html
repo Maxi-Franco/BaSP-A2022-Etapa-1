@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is a landing page with information about the Trackgenix app">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/header.css">
+  <link rel="stylesheet" href="../styles/sidebar.css">
+  <link rel="stylesheet" href="../styles/landing.css">
+  <link rel="stylesheet" href="../styles/login.css"> 
+  <link rel="stylesheet" href="../styles/sign-up.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+  <script src="../javascript/sign-up.js"></script>
+  <title>Trackgenix | Sign Up</title>
+</head>
+<body>
+  <header class="header">
+    <section class="flex-menu">
+      <div class="box-menu"><i class="fa-solid fa-bars"></i></div>
+      <a  class="box-menu" href="index.html">Trackgenix</a>
+    </section>
+    <nav id="nav-menu" class="flex-menu">
+      <a class="box-menu" href="#about-trackgenix">About</a>
+      <a class="box-menu" href="#functions">Functions</a>
+      <a class="box-menu" href="#information">Information</a>
+      <a class="box-menu" href="#history">History</a>
+      <a class="box-menu" href="#products-services">Products & Services</a>
+    </nav>
+  </header>
+  <aside>
+    <div class="flex-aside-1">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" placeholder="search">
+    </div>
+    <div class="flex-aside">
+      <span>Menu</span>
+      <a class="box-menu" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+      <a class="box-menu" href="sign-up.html"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
+      <a class="box-menu" href="login.html"><i class="fa-solid fa-user"></i> Login </a>
+    </div>
+    <div class="flex-aside">
+      <span>Contact</span>
+      <p><i class="fa-solid fa-envelope"></i> info@gigatech.com</p>
+      <p><i class="fa-solid fa-mobile-screen-button"></i> (+000) 000-0000000</p>
+      <p><i class="fa-solid fa-map-pin"></i> 1234 SomeWhere Road, SomeWhere XX 000-0000</p>
+    </div>
+  </aside>
+  <main class="main-login">
+    <section class="section-login">
+      <h1>Trackgenix</h1>
+      <h2>GigaTech Software Solutions SA</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt nihil fuga, quas eligendi et quam ex 
+        molestias accusamus sed sunt illo, quos reprehenderit quaerat? Laboriosam sed ea enim non iste?
+      </p>
+    </section>
+    <section class="section-login">
+      <form>
+        <nav>
+          <a href="login.html">Login</a>
+          <a href="sign-up.html">Sign Up</a>
+        </nav>
+        <div class="box-information">
+          <div>
+            <label>First name</label>
+            <input id="signup-firstName" type="text" placeholder="text your first name here">
+            <div id="error-firstName" class="signup-error"></div>
+          </div>
+          <div>
+            <label>Last name</label>
+            <input id="signup-lastName" type="text" placeholder="text your last name here">
+            <div id="error-lastName" class="signup-error"></div>
+          </div>
+          <div>
+            <label>DNI</label>
+            <input id="signup-DNI" type="text" placeholder="insert your DNI here">
+            <div id="error-DNI" class="signup-error"></div>
+          </div>
+          <div>
+            <label>Birth date</label>
+            <input id="signup-birthdate" type="date" placeholder="insert your birth date here">
+            <div id="error-birthDate" class="signup-error"></div>
+          </div>
+          <div>
+            <label>Phone</label>
+            <input id="signup-phone" type="text" placeholder="insert your number phone here">
+            <div id="error-phone" class="signup-error"></div>
+          </div>
+          <div>
+            <label>Location</label>
+            <input id="signup-location" type="text" placeholder="text your location here">
+            <div id="error-location" class="signup-error"></div>
+          </div>
+          <div>
+            <label>Adress</label>
+            <input id="signup-adress" type="text" placeholder="text your adress here">
+            <div id="error-adress" class="signup-error"></div>
+          </div>
+          <div>
+            <label>Postal code</label>
+            <input id="signup-postalcode" type="text" placeholder="insert the postal code here">
+            <div id="error-postalCode" class="signup-error"></div>
+          </div>
+          <div>
+            <label>Email</label>
+            <input id="signup-email" type="text" placeholder="text your email here">
+            <div id="error-email" class="signup-error"></div>
+          </div>
+          <div>
+            <label>Password</label>
+            <input id="signup-password" type="password" placeholder="text your password here">
+            <div id="error-password" class="signup-error"></div>
+          </div>
+          <div>
+            <label>Repeat password</label>
+            <input id="signup-repeatpassword" type="password" placeholder="confirm your password here">
+            <div id="error-repeatpassword" class="signup-error"></div>
+          </div>
+          <button id="btn-signup" >Create</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <!-- <footer>
+    <nav>
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-square-twitter"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-github"></i>
+    </nav>
+    <p>Copyright © 2022 Radium Rocket. All rights reserved.</p>
+  </footer>  -->
+</body>
+</html>

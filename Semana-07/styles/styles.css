@@ -1,0 +1,59 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.principal{
+  display: flex;
+  /*height: 90%;*/
+  margin-top: 100px;
+}
+
+h1{
+  font-size: 32px;
+  color: #373867;
+  
+}
+
+h2{
+  font-size: 24px;
+  color: #373867;
+  padding-top: 20px;
+}
+
+h3{
+  font-size: 20px;
+  color: #373867;
+}
+
+p{
+  font-size: 14px;
+  color: #373867;
+  padding-bottom: 20px;
+}
+
+button{
+  padding: 10px;
+  border-radius: 5px;
+  color: #373867;
+  background-color: #ffffff;
+  text-transform: capitalize;
+}
+
+button:hover{
+  color: #ffffff;
+  background-color: #373867;
+}
+
+input[type='text'],
+textarea{
+  border-radius: 5px;
+  padding: 10px;
+}

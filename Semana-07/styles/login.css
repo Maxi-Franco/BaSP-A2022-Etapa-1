@@ -1,0 +1,81 @@
+body {
+  background: #373867;
+  background: linear-gradient( #373867 0%, #5254B2 100%);
+}
+
+aside{
+  display: none;
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 100px;
+  height: 700px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
+  height: 500px;
+  width: 400px;
+}
+
+.section-login{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  padding: 0 50px 0 50px;
+}
+
+.section-login h1{
+  color: #fff;
+  padding-top: 100px;
+}
+
+.section-login h2{
+  color: #fff;
+
+}
+
+.section-login p{
+  padding-bottom: 100px;
+  color: #fff;
+}
+
+.section-login nav a{
+  color: #373867;
+  border-bottom:  2px solid #373867;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+.section-login button{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.box-information-2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.border-green{
+  border: 2px solid green;
+}
+
+.border-red{
+  border: 2px solid red;
+}
+
+.login-error{
+  font-size: 12px;
+  color: red;
+}
