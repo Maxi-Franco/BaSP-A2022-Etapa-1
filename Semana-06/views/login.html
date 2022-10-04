@@ -69,17 +69,23 @@
           <a href="sign-up.html">Sign Up</a>
         </nav>
         <div class="box-information">
-          <label>Email or User</label>
-          <input id="logEmail" type="text" placeholder="text your Email or User here">
-          <label>Password</label>
-          <input id="logPassword" type="password" placeholder="text your Password here">
+          <div>
+            <label>Email or User</label>
+            <input id="login-email" type="text" placeholder="text your Email or User here">
+            <div id="login-email-error" class="login-error"></div>
+          </div>
+          <div>
+            <label>Password</label>
+            <input id="login-password" type="password" placeholder="text your Password here">
+            <div id="login-password-error" class="login-error"></div>
+          </div>
         </div>
         <div class="box-information-2">
           <label><input type="checkbox" value="remember-checkbox"> Remember me</label>
           <a href="">Forgot password or email?</a>
-          <button id="btnLogin">Login</button>
+          <button id="btn-login">Login</button>
           <label>Not registered?</label>
-          <button>Sign Up</button>
+          <a href="sign-up.html">Sign Up</a>
         </div>
       </form>
     </section>
