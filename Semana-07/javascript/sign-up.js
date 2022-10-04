@@ -415,6 +415,55 @@ window.onload = function(){
         '\nPassword: ' + spPassword.value +
         '\nConfirm password: ' + spRepeatPassword.value
       );
+      signUp();
     }
   });
+
+  // --------- HTTP request
+  var urlSignUp = 'https://basp-m2022-api-rest-server.herokuapp.com/signup';
+  
+  function signUp(){
+    var urlSignUpParams = '?firstName=' + spFirstName.value + 
+                          '&lastName=' + spLastName.value +
+                          '&dni=' + spDNI.value +
+                          '&birthDate=' + spBirthDate.value +
+                          '&phone=' + spPhone.value +
+                          '&location=' + spLocation.value +
+                          '&adress=' + spAdress.value +
+                          '&postalCode=' + spPostalCode.value +
+                          '&email=' + spEmail.value +
+                          '&password=' + spPassword.value +
+                          '&confirmPassword=' + spRepeatPassword.value;
+    fetch(urlSignUp + urlSignUpParams)
+    .then(function(response){
+      return response.json();
+    })
+    .then(function(data){
+      if (data.success === true){
+        localStorage.setItem('dataUser', JSON.stringify(response.data));
+        alert(response.msg + '\n request:\n' + JSON.stringify(response.data));
+      } else {
+        alert('SignUp failure :(');
+      }
+    })
+    .catch(function(error){
+      alert(error);
+    })
+  }
+
+  var dataUser = null;
+  if(localStorage.getItem('dataUser') != null){
+    dataUser = JSON.parse(localStorage.getItem('dataUser'));
+    dataUser.firstName = spFirstName.value;
+    dataUser.lastName = spLastName.value;
+    dataUser.dni = spDNI.value;
+    dataUser.birthDate = spBirthDate.value;
+    dataUser.phone = spPhone.value;
+    dataUser.location = spLocation.value;
+    dataUser.adress = spAdress.value;
+    dataUser.postalCode = spPostalCode.value;
+    dataUser.email = spEmail.value;
+    dataUser.password = spPassword.value;
+    dataUser.confirmPassword = spRepeatPassword.value;
+  }
 }
