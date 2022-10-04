@@ -85,7 +85,8 @@ window.onload = function(){
   loginButton.addEventListener('click', function(e){
     e.preventDefault();    
     if (emailValid && passwordValid){
-      alert('Welcome! ' + loginEmail.value + ' ' + loginPassword.value);
+      alert('Welcome! :) \n' + loginEmail.value + ' ' + loginPassword.value);
+      login();
     } else if (!emailValid && passwordValid){
       alert('Invalid email');
     } else if (emailValid && !passwordValid){
@@ -94,4 +95,25 @@ window.onload = function(){
       alert('Invalid email & password');
     }
   });
+
+  // --------- HTTP request
+  var urlLogin = 'https://basp-m2022-api-rest-server.herokuapp.com/login';
+
+  function login(){
+    var urlLoginParams = '?email=' + loginEmail.value + '&password=' + loginPassword.value;
+    fetch(urlLogin + urlLoginParams)
+    .then(function(responseJson){
+      return responseJson.json();
+    })
+    .then(function(response){
+      if (response.success === true){
+        alert(response.msg);
+      } else {
+        throw new Error('Login failure :(');
+      }
+    })
+    .catch(function(error){
+      alert(error);
+    })
+  }
 }
