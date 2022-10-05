@@ -338,8 +338,6 @@ window.onload = function(){
     spRepeatPasswordError.innerHTML = '';
   }
 
-
-
   var dataUser = null;
   if(localStorage.getItem('dataUser') != null){
     dataUser = JSON.parse(localStorage.getItem('dataUser'));
@@ -355,8 +353,6 @@ window.onload = function(){
     dataUser.password = spPassword.value;
     dataUser.confirmPassword = spRepeatPassword.value;
   }
-
-
 
   // --------- create button
   signupButton.addEventListener('click', function(e){
