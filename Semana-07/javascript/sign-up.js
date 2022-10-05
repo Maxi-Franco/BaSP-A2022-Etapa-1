@@ -230,6 +230,7 @@ window.onload = function(){
     spBirthDate.classList.remove('border-green', 'border-red');
     if (validateDateFormat(spBirthDate.value)) {
       spBirthDate.classList.add('border-green');
+      console.log(spBirthDate.value);
     } else {
       spBirthDate.classList.add('border-red');
       spBirthDateError.innerHTML = 'Format DD/MM/YYYY';
@@ -337,9 +338,33 @@ window.onload = function(){
     spRepeatPasswordError.innerHTML = '';
   }
 
+
+
+  var dataUser = null;
+  if(localStorage.getItem('dataUser') != null){
+    dataUser = JSON.parse(localStorage.getItem('dataUser'));
+    dataUser.firstName = spFirstName.value;
+    dataUser.lastName = spLastName.value;
+    dataUser.dni = spDNI.value;
+    dataUser.birthDate = spBirthDate.value;
+    dataUser.phone = spPhone.value;
+    dataUser.location = spLocation.value;
+    dataUser.adress = spAdress.value;
+    dataUser.postalCode = spPostalCode.value;
+    dataUser.email = spEmail.value;
+    dataUser.password = spPassword.value;
+    dataUser.confirmPassword = spRepeatPassword.value;
+  }
+
+
+
   // --------- create button
   signupButton.addEventListener('click', function(e){
     e.preventDefault();    
+    var newDate = spBirthDate.value.split('-');
+    var formatDate = newDate[1] + '/' + newDate[2] + '/' + newDate[0];
+    console.log(spBirthDate.value);
+    console.log(formatDate);
     var messageCreate = [];
     var failure = false;
 
@@ -415,55 +440,58 @@ window.onload = function(){
         '\nPassword: ' + spPassword.value +
         '\nConfirm password: ' + spRepeatPassword.value
       );
-      signUp();
+      
+      // --------- HTTP request
+      var urlSignUp = 'https://basp-m2022-api-rest-server.herokuapp.com/signup';
+      var urlSignUpParams = '?name=' + spFirstName.value + 
+                            '&lastName=' + spLastName.value +
+                            '&dni=' + spDNI.value +
+                            '&dob=' + formatDate +
+                            '&phone=' + spPhone.value +
+                            '&city=' + spLocation.value +
+                            '&address=' + spAdress.value +
+                            '&zip=' + spPostalCode.value +
+                            '&email=' + spEmail.value +
+                            '&password=' + spPassword.value +
+                            '&password=' + spRepeatPassword.value;
+      fetch(urlSignUp + urlSignUpParams)
+      .then(function(response){
+        return response.json();
+      })
+      .then(function(response){  
+        if (response.success){ 
+          localStorage.setItem('dataUser', JSON.stringify(response.data));
+          alert(response.msg + '\n request:\n' + JSON.stringify(response.data));
+          localStorage.setItem('name', spFirstName.value);
+          localStorage.setItem('lastName', spLastName.value);
+          localStorage.setItem('dni', spDNI.value);
+          localStorage.setItem('dob', spBirthDate.value);
+          localStorage.setItem('phone', spPhone.value);
+          localStorage.setItem('city', spLocation.value);
+          localStorage.setItem('address', spAdress.value);
+          localStorage.setItem('zip', spPostalCode.value);
+          localStorage.setItem('email', spEmail.value);
+          localStorage.setItem('password', spPassword.value);
+          localStorage.setItem('repeatPassword', spRepeatPassword.value);
+        } else {
+          alert('SignUp failure :(');
+        }
+      })
+      .catch(function(error){
+        alert(error);
+      })
     }
   });
 
-  // --------- HTTP request
-  var urlSignUp = 'https://basp-m2022-api-rest-server.herokuapp.com/signup';
-  
-  function signUp(){
-    var urlSignUpParams = '?firstName=' + spFirstName.value + 
-                          '&lastName=' + spLastName.value +
-                          '&dni=' + spDNI.value +
-                          '&birthDate=' + spBirthDate.value +
-                          '&phone=' + spPhone.value +
-                          '&location=' + spLocation.value +
-                          '&adress=' + spAdress.value +
-                          '&postalCode=' + spPostalCode.value +
-                          '&email=' + spEmail.value +
-                          '&password=' + spPassword.value +
-                          '&confirmPassword=' + spRepeatPassword.value;
-    fetch(urlSignUp + urlSignUpParams)
-    .then(function(response){
-      return response.json();
-    })
-    .then(function(data){
-      if (data.success === true){
-        localStorage.setItem('dataUser', JSON.stringify(response.data));
-        alert(response.msg + '\n request:\n' + JSON.stringify(response.data));
-      } else {
-        alert('SignUp failure :(');
-      }
-    })
-    .catch(function(error){
-      alert(error);
-    })
-  }
-
-  var dataUser = null;
-  if(localStorage.getItem('dataUser') != null){
-    dataUser = JSON.parse(localStorage.getItem('dataUser'));
-    dataUser.firstName = spFirstName.value;
-    dataUser.lastName = spLastName.value;
-    dataUser.dni = spDNI.value;
-    dataUser.birthDate = spBirthDate.value;
-    dataUser.phone = spPhone.value;
-    dataUser.location = spLocation.value;
-    dataUser.adress = spAdress.value;
-    dataUser.postalCode = spPostalCode.value;
-    dataUser.email = spEmail.value;
-    dataUser.password = spPassword.value;
-    dataUser.confirmPassword = spRepeatPassword.value;
-  }
+  spFirstName.value = localStorage.getItem('name');
+  spLastName.value = localStorage.getItem('lastName');
+  spDNI.value = localStorage.getItem('dni');
+  spBirthDate.value = localStorage.getItem('dob');
+  spPhone.value = localStorage.getItem('phone');
+  spLocation.value = localStorage.getItem('city');
+  spAdress.value = localStorage.getItem('address');
+  spPostalCode.value = localStorage.getItem('zip');
+  spEmail.value = localStorage.getItem('email');
+  spPassword.value = localStorage.getItem('password');
+  spRepeatPassword.value = localStorage.getItem('repeatPassword');
 }
